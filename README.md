@@ -1,2 +1,1 @@
-# matrixhabh-js-hindi1
-first Python Repo
+JS Notes repo to be updated soon!
