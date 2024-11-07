@@ -18,4 +18,23 @@ because of issue in block scope and functional scope
 
 console.table([accountEmail, accountPassword, accountCity])
 
-// More info would be added
+// var :-
+
+var first = "wes";
+
+// also
+
+<body>
+  <script>
+    var first = 'wes';
+    console.log(first);
+  </script>
+</body>
+
+// let
+
+let age1 = 300;
+
+// const :-
+
+const cool = true;
