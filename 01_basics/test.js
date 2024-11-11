@@ -1,1 +1,1 @@
-console.log("rishabh")
+// All tests are performed ;)
