@@ -115,3 +115,66 @@ console.log(booleanIsLoggedIn3);
 // Output-
 
 // true
+
+// **************** Operations ****************
+
+let value = 3
+let negValue = -value
+console.log(negValue);
+
+// Output: -3 (ez ryt)
+
+// Some examples-
+
+// console.log(2+2);
+// console.log(2-2);
+// console.log(2*2);
+// console.log(2**2);
+// console.log(2/2);
+// console.log(2%2);
+
+
+// Str operation example-
+
+let str1 = "Konnichiwa"
+let str2 = " Rishabh"
+
+let str3 = str1 + str2
+console.log(str3);
+// Output: Konnichiwa Rishabh
+
+// Now- (Concept)
+
+console.log("1" + 2);
+console.log(1 + "2");
+console.log("1" + 2 + 2);
+console.log(1 + 2 + "2");
+
+// Output-
+
+// 12
+// 12
+// 122
+// 32
+
+// Tricky conversions that aren't recommended-
+
+console.log(true);
+console.log(+true);
+// console.log(true+);
+console.log(+"");
+
+// Output-
+
+// true
+// 1
+// unexpected error
+// 0
+
+// prefix and postfix operators ex-
+
+let gameCounter = 100
+++gameCounter; // or gameCounter++
+console.log(gameCounter);
+
+// Output- 101
