@@ -33,6 +33,28 @@ console.log(otherNumber3.toPrecision(4));
 // output:- 123.7
 
 const hundreds = 1000000
-console.log(hundreds.toLocaleString());
+console.log(hundreds.toLocaleString()); // Output is in US standard
 
 // output:- 1,000,000
+
+console.log(hundreds.toLocaleString('en-IN')); // Output is in Indian standard
+
+// Output:- 10,00,000
+
+// ********************** MATHS **************************
+
+console.log(Math);
+// output:- Object [Math] {}
+
+console.log(Math.abs(-4)); // 4
+// here positive stays in positive but negative turns into positive ;)
+
+// To roundoff-
+console.log(Math.round(4.3)); // 4
+console.log(Math.round(4.6)); // 5
+console.log(Math.ceil(4.2)); // 5
+console.log(Math.floor(4.9)); // 4
+console.log(Math.min(4, 3, 6, 8)); // 3
+console.log(Math.max(4, 3, 6, 8)); // 8
+console.log(Math.random()*10 + 1); // generates a random decimal no.
+console.log((Math.random()*10) + 1);
