@@ -75,3 +75,36 @@ console.log(TinderUser.hasOwnProperty('isLoggedin'));
 // Gives boolean value : true 
 console.log(TinderUser.hasOwnProperty('isLogged'));
 // Gives boolean value : false 
+
+
+
+// De-structuring:-
+
+
+const course = {
+    coursename: "Js",
+    price: "999",
+    courseEnroller: "Rishabh"
+}
+
+// course.courseEnroller
+
+const {courseEnroller} = course
+
+console.log(courseEnroller);
+
+// React concept to understand de-structuring
+const navbar = ({company}) => {
+
+}
+
+navbar(company = "Rishabh" ) 
+
+// By the removal of the old XML and embedment of new JSON we understand-
+
+// {
+//     "courseEnroller": "Rishabh",
+//     "price": "free",
+//     "course": "Js"
+// }
+// here the keys and values both must be in the string format.
