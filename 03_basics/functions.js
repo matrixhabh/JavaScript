@@ -95,7 +95,7 @@ function loginUserMessage(username) {
     return `${username} has logged in`
 }
 
-console.log(loginUserMessage());
+// console.log(loginUserMessage());
 
 // If we want to avoid the default if value here 
 // we can just give (username = 'kratos') {i.e., defining a value}
@@ -109,3 +109,38 @@ console.log(loginUserMessage());
 // if (undefined) or if ("") are some examples of false values
 // if (!) ( here ! mark turns true to false and false to true)
 // instead of writing (username === undefined) we can just write (!username)
+
+// Functions with objects and arrays -
+
+function calculateCartPrice(num1) {
+    return num1
+}
+
+console.log(calculateCartPrice(2));
+
+// Output -
+// 2
+
+// Another case- (passing a lot of values)
+
+function calculateCartPrice(num1) {
+    return num1
+}
+
+console.log(calculateCartPrice(200, 300, 400));
+
+// Output-
+// 200 (first item)
+
+
+// Now comes the concept of Rest Operator / Spread Operator
+
+
+function calculateCartPrice(...num1) { //(here the 3 dots are known as rest/spread operators)
+    return num1
+}
+
+console.log(calculateCartPrice(400, 800, 900, 3000, 5000));
+
+// Output- 
+// [ 400, 800, 900, 3000, 5000 ] (An array created bcz of the operator helps to show all the listed prices)
