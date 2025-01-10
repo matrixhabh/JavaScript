@@ -144,3 +144,91 @@ console.log(calculateCartPrice(400, 800, 900, 3000, 5000));
 
 // Output- 
 // [ 400, 800, 900, 3000, 5000 ] (An array created bcz of the operator helps to show all the listed prices)
+
+// Another case-
+
+function calculateCartPrice(val1, val2, ...num1) {
+    return num1
+}
+
+console.log(calculateCartPrice(200, 400, 600 ,800));
+
+// Output-
+// [ 600, 800 ] ( val1-> 200, val2-> 400, the rest gets printed )
+
+ const user = {
+    username: "Rishabh",
+    price: 199
+ }
+
+ function handleObject(anyobject){
+    console.log(`The username is ${anyobject.username} and price is ${anyobject.price}`);
+ }
+
+ handleObject(user)
+
+//  Output-
+// The username is Rishabh and price is 199
+
+
+// Note that-
+// variable name is very imp i.e.,
+
+// const user = {
+//     username: "Rishabh",
+//     prices: 199
+//  }
+
+//  function handleObject(anyobject){
+//     console.log(`The username is ${anyobject.username} and price is ${anyobject.price}`);
+//  }
+
+//  handleObject(user)
+
+// Then the output will be-
+// The username is Rishabh and price is undefined (bcz of name convention)
+
+
+// Another way to pass the function-
+
+const user2 = {
+    username: "Rishabh",
+    price: 199
+ }
+
+ function handleObject(anyobject){
+    console.log(`The username is ${anyobject.username} and price is ${anyobject.price}`);
+ }
+
+//  handleObject(user2)
+handleObject({
+    username: "PS",
+    price: 399
+})
+
+// Output-
+// The username is PS and price is 399
+
+const myNewArray = [200, 400, 600, 800]
+
+function passSecondValue(getarray){
+    return getarray[1]
+}
+
+console.log(passSecondValue(myNewArray));
+
+// Output-
+// 400
+
+// Still arrays can also be passed similarly like objects (directly or by variable)-
+
+const myNewArray1 = [200, 400, 600, 800]
+
+function passSecondValue(getarray){
+    return getarray[1]
+}
+
+console.log(passSecondValue([400, 800, 1200, 1800]));
+
+// Output-
+// 800
