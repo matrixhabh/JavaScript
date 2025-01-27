@@ -18,9 +18,35 @@ let x = 10
 
 if (true) {
     let x = 20
-    console.log("INNER: ", x); // INNER: 20
+    // console.log("INNER: ", x); // INNER: 20
 }
 
 console.log(x); // 10
 
 // This is use of global and local scope
+
+function one(){
+    const username = "Rishabh"
+
+    function two(){
+        const website = "youtube"
+        console.log(username);
+    }
+    // console.log(website);
+    two()
+}
+one() 
+
+// Output- Rishabh
+// Trick :- smaller can grab from bigger but bigger can't from smaller
+
+if (true) {
+    const username = "Rishu"
+    if (username === "Rishu") {
+        const website = " youtube"
+        // console.log(username + website);
+    }
+    // console.log(website);
+}
+console.log(username);
+
