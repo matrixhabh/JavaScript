@@ -1,3 +1,6 @@
+// In JavaScript, variables are used to store data values that can be used and manipulated throughout your code. 
+// A variable acts as a container for storing data, and you can give it a name to reference it later.
+
 const accountId = 14455
 let accountEmail = "rishabh@google.com"
 var accountPassword = "12345"
