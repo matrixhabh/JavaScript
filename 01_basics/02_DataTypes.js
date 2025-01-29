@@ -1,3 +1,6 @@
+// In JavaScript, data types define the kind of values that can be stored and manipulated within a program. 
+// JavaScript has two main categories of data types
+
 "use strict"; // treat all js code as newer version 
 
 // alert(3 + 3) // we are using nodejs, not browser
