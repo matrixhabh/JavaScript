@@ -35,7 +35,7 @@ function one(){
     // console.log(website);
     two()
 }
-one() 
+one() // Note that after two() gets interpreted one() gets interpreted and two() gets interpreted once again.
 
 // Output- Rishabh
 // Trick :- smaller can grab from bigger but bigger can't from smaller
@@ -44,9 +44,30 @@ if (true) {
     const username = "Rishu"
     if (username === "Rishu") {
         const website = " youtube"
-        // console.log(username + website);
+        // console.log(username + website); // Output:- Rishu + youtube
     }
-    // console.log(website);
+    // console.log(website); // bcz the scope of inner if ends
 }
-console.log(username);
+// console.log(username); // same
 
+
+// ***************** Interesting *************************
+
+// Writing functions by two ways 
+
+console.log(addone(5))
+
+function addone (num){
+    return num + 1
+}
+
+// Output:- 6
+
+console.log(addtwo(5))
+
+const addtwo = function(num) {
+    return num + 2
+}
+
+// Output:- Cannot access 'addtwo' before initialization
+// This is called hoisting problem.
