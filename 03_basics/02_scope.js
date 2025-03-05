@@ -53,6 +53,7 @@ if (true) {
 
 // ***************** Interesting *************************
 
+
 // Writing functions by two ways 
 
 console.log(addone(5))
