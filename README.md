@@ -1,1 +1,1 @@
-JS Notes repo to be updated soon!
+JS Notes repo!
